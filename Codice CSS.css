@@ -1,0 +1,64 @@
+/* Stili CSS per la sezione di download dei report di sostenibilità */
+.sustainability-reports {
+    font-family: Arial, sans-serif; /* Font di base per il testo */
+    padding: 20px; /* Spazio interno intorno al contenuto della sezione */
+    border: 1px solid #ccc; /* Bordo sottile per delimitare la sezione */
+    margin-bottom: 20px; /* Spazio sotto la sezione */
+}
+
+.sustainability-reports h2 {
+    color: #cc0000; /* Colore rosso Ferrari per il titolo */
+    margin-top: 0; /* Rimuove il margine superiore predefinito */
+    margin-bottom: 15px; /* Spazio sotto il titolo */
+}
+
+.sustainability-reports p {
+    line-height: 1.6; /* Interlinea per una migliore leggibilità */
+    margin-bottom: 15px; /* Spazio sotto il paragrafo introduttivo */
+}
+
+.report-links {
+    display: flex; /* Utilizza Flexbox per disporre i link in orizzontale (su schermi più grandi) */
+    flex-direction: column; /* Imposta la direzione degli elementi in colonna per impostazione predefinita (schermi piccoli) */
+    gap: 20px; /* Spazio tra gli elementi del report */
+}
+
+.report-item {
+    border: 1px solid #eee; /* Bordo leggero per ogni elemento del report */
+    padding: 15px; /* Spazio interno per ogni elemento del report */
+    border-radius: 5px; /* Angoli arrotondati per un aspetto più moderno */
+}
+
+.report-item h3 {
+    margin-top: 0; /* Rimuove il margine superiore predefinito */
+    margin-bottom: 10px; /* Spazio sotto il sottotitolo */
+    color: #333; /* Colore del sottotitolo */
+}
+
+.report-item p {
+    color: #666; /* Colore del testo descrittivo */
+    margin-bottom: 10px; /* Spazio sotto la descrizione */
+}
+
+.download-button {
+    display: inline-block; /* Rende il link un elemento a blocco in linea per poter impostare padding e margini */
+    background-color: #cc0000; /* Sfondo rosso per il pulsante */
+    color: white; /* Testo bianco per il pulsante */
+    padding: 10px 15px; /* Spazio interno del pulsante */
+    text-decoration: none; /* Rimuove la sottolineatura predefinita dei link */
+    border-radius: 5px; /* Angoli arrotondati per il pulsante */
+    font-weight: bold; /* Testo in grassetto per il pulsante */
+    transition: background-color 0.3s ease; /* Transizione fluida per l'effetto hover */
+}
+
+.download-button:hover {
+    background-color: #aa0000; /* Sfondo leggermente più scuro al passaggio del mouse */
+}
+
+/* Media query per schermi più grandi (ad esempio, tablet e desktop) */
+@media (min-width: 768px) {
+    .report-links {
+        flex-direction: row; /* Dispone gli elementi in riga su schermi più grandi */
+        justify-content: space-around; /* Distribuisce lo spazio tra gli elementi */
+    }
+}
